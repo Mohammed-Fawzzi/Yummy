@@ -28,4 +28,4 @@ This is a simple recipe app designed to help you discover delicious recipes from
 
 ## Live Demo
 
-Check out the live demo [here]().
+Check out the live demo [here](https://mohammed-fawzzi.github.io/Yummy/).
