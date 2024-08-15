@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- Icon -->
+    <link rel="Icon" href="imgs/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..    900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0 bottom-0">
+        <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+                    <li onclick="getCategory(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+                    <li onclick="getArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+                    <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons py-3 text-center">
+                    <a target="_blank" href="https://www.facebook.com/mofawzzi14/"><i class="pe-4 fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://github.com/Mohammed-Fawzzi"><i class="pe-4 fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/mohamed-fawzzi-72b962280/"><i class="pe-4 fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer">
+                    <p>© All Rights Reserved<br><a href="tel: +01021580334" target="_blank" class="fw-bold">Mohamed Fawzzi.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="imgs/logo.png" alt="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="container w-75" id="searchContainer">
+    
+    </div>
+
+    <!-- Main Meals -->
+    <div class="min-vh-100 position-relative main-meals">
+        
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+            <span class="loader"></span>
+        </div>
+
+        <div class="container">
+            <div class="row py-5 g-5" id="rowData">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
