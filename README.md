@@ -15,6 +15,7 @@ This is a simple recipe app designed to help you discover delicious recipes from
 - Bootstrap
 - Font Awesome
 - JavaScript
+- Jquery
 - TheMealDB API([TheMealDB API](https://www.themealdb.com/api.php))
 
 ## Preview
